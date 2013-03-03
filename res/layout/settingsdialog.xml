@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mysettings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:isScrollContainer="true"
+    android:scrollbars="vertical" 
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        >
+
+        <LinearLayout
+            android:paddingLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            >
+
+            <CheckBox
+                android:id="@+id/soundcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_sound" 
+                />
+
+            <CheckBox
+                android:id="@+id/vibrationcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_vibration" 
+                />
+        </LinearLayout>
+
+        <View
+    		android:layout_width="fill_parent"
+    		android:layout_height="1dp"
+    		android:background="@android:color/darker_gray"/>
+        <TextView
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ignore_minutes1" 
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            >
+
+            <EditText
+                android:paddingLeft="3dp"
+                android:id="@+id/numMinutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:selectAllOnFocus="true" 
+                >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ignore_minutes2" 
+                >
+            </TextView>
+        </LinearLayout>
+        
+        <View
+    		android:layout_width="fill_parent"
+    		android:layout_height="1dp"
+    		android:background="@android:color/darker_gray"
+    		/>
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm_range1" 
+            >
+        </TextView>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            >
+            <TextView
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_range2" 
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/alarmrange1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:selectAllOnFocus="true" 
+                >
+            </EditText>
+			<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm_range3" 
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/alarmrange2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:selectAllOnFocus="true" 
+                >
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ignore_minutes2" 
+                >
+            </TextView>
+        </LinearLayout>
+
+        <View
+    		android:layout_width="fill_parent"
+    		android:layout_height="1dp"
+    		android:background="@android:color/darker_gray"
+    		/>
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_by" 
+            >
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/ordertype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            >
+
+            <RadioButton
+                android:id="@+id/asc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/asc_text" 
+                />
+
+            <RadioButton
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_text" 
+                />
+        </RadioGroup>
+
+        <View
+    		android:layout_width="fill_parent"
+    		android:layout_height="1dp"
+    		android:background="@android:color/darker_gray"
+    		/>
+        <TextView
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:id="@+id/sortname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sort" 
+            >
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/sortcolumn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/sort1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/sort_default" />
+
+            <RadioButton
+                android:id="@+id/sort2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_next" />
+
+            <RadioButton
+                android:id="@+id/sort3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_created" />
+
+            <RadioButton
+                android:id="@+id/sort4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_planted" />
+
+            <RadioButton
+                android:id="@+id/sort5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_last" />
+
+            <RadioButton
+                android:id="@+id/sort6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_byname" />
+
+            <RadioButton
+                android:id="@+id/sort7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_days" />
+        </RadioGroup>
+        
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,62 @@
+<resources>
+
+    <string name="app_name">Water Plants</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Water Plants</string>
+    <string name="nodata">No Data Yet, Click the menu button and then click New to Add Plants.\n\nLong Click on a row of data to edit that plant</string>
+    
+    
+    <string name="image_content_description">Plant Image</string>
+    <string name="plant_name">Name:</string>
+	<string name="plant_date">Planted on:\u0020</string>
+	<string name="last_water">Last water:\u0020 </string>
+	<string name="set_alarmdate">Alarm Date</string>
+	<string name="interval">Water every\u0020</string>
+	<string name="day_unit">\u0020Days at\u0020</string>
+    <string name="next_water">Next water:\u0020</string>
+    <string name="notes">Note:</string>
+    <string name="create_date">Entry created on:\u0020</string>
+    <string name="start_from">Start From\u0020</string>
+    <string name="last_water_date">Last Water Date</string>
+    <string name="today">Today</string>
+    <string name="delete_plant">Delete Plant</string>
+    <string name="create_plant">New</string>
+    <string name="edit_plant">Edit</string>
+    <string name="share_app">Share this App</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings">Settings</string>
+    <string name="water_all">Water Showed Plants</string>
+    <string name="full_view1">All Plants</string>
+    <string name="full_view0">Recent Alarms</string>
+    <string name="take_photo">Image from Camera</string>
+    <string name="take_gallery">Image from Gallery</string>
+    <string name="insert_time">Insert Time</string>
+    <string name="stop_alarm">Stop Alarm</string>
+    <string name="enable_alarm">Enable Alarm</string>
+    <string name="skip_alarm">Skip Next Alarm</string>
+    <string name="save">\u0020Save\u0020</string>
+    <string name="cancel">\u0020Cancel\u0020</string>
+    
+    
+    <string name="sort">Sort by</string>
+    <string name="order_by">Data arranged in</string>
+    <string name="asc_text">Ascending order: 0\u22129 A\u2212Z</string>
+    <string name="desc_text">Descending order: Z\u2212A 9\u22120</string>
+    <string name="ignore_minutes1">Ignore All Alarms for the following\u0020</string>
+    <string name="ignore_minutes2">\u0020Minutes</string>
+    <string name="admob_pid">a15026b86563eb4</string>
+    <string name="sort_default">Default</string>
+    <string name="sort_next">Next Water Date</string>
+    <string name="sort_created">Created Date</string>
+    <string name="sort_planted">Planted Date</string>
+    <string name="sort_last">Last Water Date</string>
+    <string name="sort_byname">Name</string>
+    <string name="sort_days">Day Interval</string>
+    <string name="check_sound">Alarm Sound</string>
+    <string name="check_vibration">Vibration</string>
+    <string name="alarm_range1">Show Plants whose latest alarm time is within the following range: </string>
+    <string name="alarm_range2">\u2212</string>
+    <string name="alarm_range3">Minutes to +</string>
+    
+</resources>

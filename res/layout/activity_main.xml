@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+     
+	<com.google.ads.AdView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	    android:id="@+id/adView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    ads:adSize="BANNER"
+	    ads:adUnitId="@string/admob_pid"
+	    ads:keywords="plant,garden,water"
+	    ads:loadAdOnCreate="true" 
+	    />
+
+	<TextView
+	    android:id="@+id/dummyView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone" 
+	    />
+
+	<ListView
+	    android:id="@+id/android:list"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:clipChildren="true" >
+	</ListView>
+
+	<TextView 
+	    android:id="@+id/android:empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nodata"
+        />
+</LinearLayout>
+
